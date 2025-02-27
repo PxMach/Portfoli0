@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+/* Header*/
+header {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header a {
+  margin-right: 40px;
+  font-size: 20px;
+  color: black;
+}
+header .logo {
+  width: 50%;
+  margin-left: 20px;
+  color: rgb(211, 92, 92);
+  font-weight: 800;
+  font-size: 30px;
+}
+nav .active {
+  color: rgb(211, 92, 92);
+  border-bottom: 2px solid rgb(211, 92, 92);
+}
+nav a:hover {
+  color: rgb(211, 92, 92);
+  border-bottom: 2px solid rgb(211, 92, 92);
+}
+
+/* Section Home */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.home-img img {
+  margin: 40px;
+  width: 500px;
+  border-radius: 50%;
+}
+.home-content {
+  text-align: center;
+  font-size: 20px;
+  align-items: center; /* Centrer les éléments horizontalement */
+  justify-content: center; /* Centrer les éléments verticalement */
+}
+.home-content h1 {
+  text-align: center;
+}
+.home-content h1 > span {
+  color: rgb(211, 92, 92);
+}
+.home-content h3 {
+  margin-bottom: 20px;
+}
+.home-content p {
+  margin-bottom: 20px;
+}
+.home-content .social-icons {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.home-content .social-icons > a {
+  color: black;
+}
+.home-content .social-icons > a:hover {
+  color: rgb(220, 91, 91);
+  border-bottom: 2px solid rgb(220, 91, 91);
+}
+.home-content .btn {
+  display: inline-block;
+  background: gray;
+  font-size: 35px;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 20px; /* Ajoute du padding pour un meilleur look */
+  text-align: center;
+  margin-top: 20px; /* Ajoute un peu d'espace au-dessus du bouton */
+  cursor: pointer;
+  text-decoration: none;
+}
+.home-content .btn:hover {
+  background: rgb(211, 92, 92);
+}
+
+/* Section Skills */
+.section-skills {
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 20px;
+  padding: 100px;
+}
+.section-skills h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.skills-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+.skills-container .skill {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #fff;
+  border: 0;
+  height: 150px;
+  width: 300px;
+  border-radius: 10px;
+}
+.skills-container .skill i {
+  margin: 20px;
+  font-size: 30px;
+}
+.skills-container .skill .fa-html5 {
+  color: orange;
+}
+.skills-container .skill .fa-js {
+  color: rgb(190, 190, 87);
+}
+.skills-container .skill .fa-database {
+  color: rgb(62, 62, 196);
+}
+
+/* Section Project */
+.section-projects {
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 20px;
+  padding: 100px;
+  text-align: center;
+}
+.section-projects h2 {
+  font-size: 36px;
+  margin: 20px;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.project-item {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 0;
+  /* width: 300px; */
+  border-radius: 10px;
+  text-align: left;
+}
+.project-item h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.project-item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.project-item span {
+  font-size: 14px;
+  color: #666;
+}
