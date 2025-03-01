@@ -41,6 +41,14 @@ nav a:hover {
   color: rgb(211, 92, 92);
   border-bottom: 2px solid rgb(211, 92, 92);
 }
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hamburger i {
+  font-size: 24px;
+  color: black;
+}
 
 /* Section Home */
 .home {
@@ -226,8 +234,26 @@ form p {
 }
 
 /* Responsive */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 500px) {
   .home-img img {
     display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30%;
+    background-color: rgb(244, 188, 188);
+    text-align: right;
+  }
+  nav.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
   }
 }

@@ -7,3 +7,7 @@ document.querySelectorAll("nav a").forEach((anchor) => {
     });
   });
 });
+
+document.querySelector(".hamburger").addEventListener("click", function () {
+  document.querySelector("nav").classList.toggle("active");
+});
