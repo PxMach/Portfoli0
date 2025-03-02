@@ -13,13 +13,14 @@ body {
 }
 /* Header*/
 header {
-  margin: 20px;
+  padding: 20px;
   display: flex;
   justify-content: space-evenly;
   position: fixed;
   width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #eeecec;
 }
 header a {
   margin-right: 40px;
@@ -179,6 +180,9 @@ nav a:hover {
   font-size: 24px;
   margin-bottom: 10px;
 }
+.project-item h3 a {
+  color: #333;
+}
 .project-item p {
   font-size: 16px;
   margin-bottom: 10px;
@@ -240,6 +244,10 @@ form p {
   }
 }
 @media only screen and (max-width: 500px) {
+  .home {
+    padding-top: 70px;
+  }
+
   nav {
     display: none;
     flex-direction: column;
@@ -255,5 +263,9 @@ form p {
   }
   .hamburger {
     display: block;
+  }
+
+  .skill {
+    padding: 0 10px 230px 10px;
   }
 }
