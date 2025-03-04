@@ -268,11 +268,11 @@ p a {
       display: none;
    }
 }
-@media only screen and (max-width: 500px) {
-   .home {
-      padding-top: 70px;
-   }
 
+@media only screen and (max-width: 1130px) {
+   .home-img img {
+      display: none;
+   }
    nav {
       display: none;
       flex-direction: column;
@@ -290,7 +290,15 @@ p a {
       display: block;
    }
 
-   .skill {
-      padding: 0 10px 230px 10px;
+   .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 300px);
+      gap: 1rem;
+   }
+}
+
+@media only screen and (max-width: 550px) {
+   .home {
+      padding-top: 70px;
    }
 }
