@@ -1,18 +1,24 @@
-document.querySelectorAll("nav a").forEach((anchor) => {
-   anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute("href").substring(1);
-      document.getElementById(targetId).scrollIntoView({
-         behavior: "smooth",
+let navi = document.querySelectorAll("nav a");
+let hamburger = document.querySelector(".hamburger");
+let icon = document.getElementById("icon");
+
+function scroll() {
+   navi.forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+         e.preventDefault();
+         const targetId = this.getAttribute("href").substring(1);
+         document.getElementById(targetId).scrollIntoView({
+            behavior: "smooth",
+         });
       });
    });
-});
+}
 
-document.querySelector(".hamburger").addEventListener("click", function () {
-   document.querySelector("nav").classList.toggle("active");
-});
-
-let icon = document.getElementById("icon");
+function dropDown() {
+   hamburger.addEventListener("click", function () {
+      document.querySelector("nav").classList.toggle("active");
+   });
+}
 
 function changeTheme() {
    icon.addEventListener("click", function () {
@@ -24,3 +30,5 @@ function changeTheme() {
       }
    });
 }
+
+scroll();
