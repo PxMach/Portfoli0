@@ -17,10 +17,7 @@
 }
 
 
-#icon {
-   width: 30px;
-   cursor: pointer;
-}
+
 body {
    min-height: 100vh;
    background-color: var(--primary-color);
@@ -55,6 +52,10 @@ nav .active {
 nav a:hover {
    color: rgb(211, 92, 92);
    border-bottom: 2px solid rgb(211, 92, 92);
+}
+#icon {
+   width: 30px;
+   cursor: pointer;
 }
 .hamburger {
    display: none;
