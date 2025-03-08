@@ -42,9 +42,17 @@ header .logo {
    font-weight: 800;
    font-size: 30px;
 }
+nav {
+   margin-top: 10px;
+}
 nav .active {
    color: rgb(211, 92, 92);
    border-bottom: 2px solid rgb(211, 92, 92);
+}
+nav a {
+   width: 100%;
+   text-align: center;
+   margin: 10px 10px 5px 10px;
 }
 nav a:hover {
    color: rgb(211, 92, 92);
@@ -191,7 +199,7 @@ nav a:hover {
    text-align: left;
 }
 .project-item:hover {
-   font-size: 30px;
+   transform: scale(1.1);
 }
 .project-item h3 {
    text-align: center;
@@ -294,6 +302,12 @@ p a {
       display: grid;
       grid-template-columns: repeat(auto-fit, 300px);
       gap: 1rem;
+   }
+}
+
+@media only screen and (max-width: 626px) {
+   nav {
+      margin-top: 0px;
    }
 }
 

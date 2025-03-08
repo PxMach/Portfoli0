@@ -15,9 +15,7 @@ function scroll() {
 }
 
 function dropDown() {
-   hamburger.addEventListener("click", function () {
-      document.querySelector("nav").classList.toggle("active");
-   });
+   document.querySelector("nav").classList.toggle("active");
 }
 
 function changeTheme() {
